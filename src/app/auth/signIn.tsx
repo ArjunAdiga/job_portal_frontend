@@ -64,12 +64,13 @@ const SignIn = ({ login }: { login: any }) => {
           message: "Login is successful.",
           show: true,
         });
-        const { role } = response.data;
+        const { role, email } = response.data;
         if (role === "employer") {
-          router.push("/employer");
+          router.push("/employer/create");
         } else {
           router.push("/job-seeker");
         }
+        localStorage.setItem("email", email);
         setTimeout(() => {
           setAlert((prev) => ({ ...prev, show: false }));
         }, 3000);
