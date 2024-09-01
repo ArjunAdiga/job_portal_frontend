@@ -1,7 +1,7 @@
 import React from "react";
 import "./card.css";
 import { Box, Button, Grid, Typography } from "@mui/material";
-import { Router } from "next/router";
+
 import { useRouter } from "next/navigation";
 
 interface Job {

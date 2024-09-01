@@ -1,7 +1,8 @@
 import React from "react";
+import MainPageSeeker from "./mainPageSeeker";
 
 const page = () => {
-  return <div>welcome , seeker</div>;
+  return <MainPageSeeker />;
 };
 
 export default page;

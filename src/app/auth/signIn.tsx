@@ -68,7 +68,7 @@ const SignIn = ({ login }: { login: any }) => {
         if (role === "employer") {
           router.push("/employer/create");
         } else {
-          router.push("/job-seeker");
+          router.push("/job-seeker/get-all");
         }
         localStorage.setItem("email", email);
         setTimeout(() => {
