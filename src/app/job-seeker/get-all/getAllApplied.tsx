@@ -48,13 +48,14 @@ const GetAllApplied = () => {
           </Typography>
         </Box>
         <Box>
-          {allData?.map((item) => (
+          {allData?.map((item,index) => (
             <Box
               className="box"
               display="flex"
               flexWrap="wrap"
               rowGap="12px"
               columnGap="4%"
+              key={index}
             >
               <Box width="10%">
                 <Typography variant="h6" fontSize={12} fontWeight={400}>

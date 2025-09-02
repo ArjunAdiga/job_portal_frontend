@@ -57,7 +57,7 @@ const SignUp = ({ login }: { login: any }) => {
         "http://localhost:8080/signup",
         signupData
       );
-      if (response.status === 200) {
+      if (response.status === 200 || response.status === 201) {
         setAlert({
           type: "success",
           message: "SignUp is successful",
@@ -70,6 +70,7 @@ const SignUp = ({ login }: { login: any }) => {
         }, 3000);
       }
     } catch (error) {
+      console.log(error)
       setAlert({
         type: "error",
         message: "Signup is not successful.",
