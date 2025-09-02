@@ -36,13 +36,14 @@ const GetListOfApplied = (createId: any) => {
           List of all applied candidates
         </Typography>
         <Box width="80%">
-          {data?.map((item) => (
+          {data?.map((item,index) => (
             <Box
               className="box"
               display="flex"
               flexWrap="wrap"
               rowGap="12px"
               columnGap="4%"
+              key={index}
             >
               <Box width="30%">
                 <Typography variant="h6" fontSize={12} fontWeight={400}>

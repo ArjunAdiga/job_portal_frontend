@@ -16,7 +16,6 @@ interface Job {
 }
 
 const JobCard = ({ item, index }: { item: Job; index: number }) => {
-  console.log(item);
   const datarender = [
     {
       label: "Company",
@@ -52,8 +51,8 @@ const JobCard = ({ item, index }: { item: Job; index: number }) => {
     <>
       <Box className="box">
         <Grid container rowGap={2} columnGap={2}>
-          {datarender?.map((item) => (
-            <Grid item md={3} sm={4} xs={5}>
+          {datarender?.map((item,index) => (
+            <Grid item md={3} sm={4} xs={5} key={index}>
               <Typography variant="h4" fontWeight={400} fontSize="12px">
                 {item?.label}
               </Typography>

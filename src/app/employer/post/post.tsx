@@ -41,7 +41,7 @@ const Post = () => {
           </Typography>
         </Box>
         <Box width="90%">
-          {data?.map((item, index) => <JobCard item={item} index={index} />)}
+          {data?.map((item, index) => <JobCard item={item} index={index} key={index}/>)}
         </Box>
       </Box>
     </>

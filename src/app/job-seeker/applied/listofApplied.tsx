@@ -33,8 +33,8 @@ const ListofApplied = () => {
           gap="24px"
           marginTop={"24px"}
         >
-          {allData?.map((item) => (
-            <Box display={"flex"} flexDirection={"column"} gap="8px">
+          {allData?.map((item,index) => (
+            <Box display={"flex"} flexDirection={"column"} gap="8px" key={index}>
               <Typography variant="h5" fontWeight={400} fontSize="16px">
                 This is job id
               </Typography>
